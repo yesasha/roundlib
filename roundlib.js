@@ -21,7 +21,7 @@ function roundHalfToEven (x) {
     return x;
   }
 
-  var f = Math.floor(x);
+  var f = roundDown(x);
   if ((f + 0.5) < x) return f + 1;
   if (x < (f + 0.5)) return f;
   if (f % 2) return f + 1;
